@@ -1,0 +1,245 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(32,175,205); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(32,175,255); 
+  }
+
+body {
+    padding-top: 3rem;
+    color: #5a5a5a;
+  }
+  
+  /* CUSTOMIZE NAVBAR 
+  -------------------------------------------------- */
+    #Home-icon{
+        color: #20afcd !important;
+        border-bottom: 1px solid #20afcd;
+    }
+    .nav-pills {
+        padding: 3px 3px 0 5px;
+    }
+
+    .nav li {
+        margin-right: 5px;
+        background-color: #20afcd;
+        border-radius: 3px;
+    }
+
+    .nav a {
+        font-size: 0.8em;
+        padding: 5px;
+        color: #ffffff;
+    }
+
+    .menu-iten a{
+        color: #5a5a5a !important;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .menu-iten a:hover{
+        color: #20afcd !important;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+    .dropdown-item:hover>.dropdown-menu {
+        display: block;
+    }
+    ul li{
+        list-style-type:none;
+        display: inline;
+    }
+    
+    .navbar-nav .nav-link{display:inline-block;}
+        
+    .ml-auto {display:inline-block!important;}
+    
+    .dropdown>.dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+
+  /* CUSTOMIZE INFORMATION
+  -------------------------------------------------- */
+
+    /*Primeiro texto*/
+    #propag1{
+        text-align: center;
+        background-color: #313131;
+    }
+
+    #propag1 h2{
+        color: #20afcd;
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    #propag1 p{
+      color: white;
+      font-size: 1.5em;
+    }
+    
+  /*cards*/
+  #cards{
+    margin-top: 1%;
+  }
+  #entenda{
+    text-align: center;
+  }
+  #entenda i{
+    font-size: 4em;
+  }
+  #entenda a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: block;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #depoimentos{
+    text-align: center;
+  }
+  #depoimentos i{
+    font-size: 4em;
+  }
+  #depoimentos a{
+    border: 1px solid black;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #apresentacao{
+    text-align: center;
+  }
+  #apresentacao i{
+    font-size: 4em;
+  }
+  #apresentacao a{
+    border: 1px solid black;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*FAQ*/
+  /* CUSTOMIZE FAQ 
+  -------------------------------------------------- */
+  #faq{
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 70%;
+  }
+  #faq button{
+    font-size: 1.3em;
+  }
+  .accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  #faq .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  #faq .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }  
+  
+  /* CUSTOMIZE footer 
+  -------------------------------------------------- */
+  #conteudo_rodape{
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
